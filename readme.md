@@ -16,4 +16,4 @@ game rules are as follows:
 - https://florin12er.github.io/Rock-paper-scrissor_2/
 
 ## credits
-- Florin12er github.com/Florin12er
+- Florin12er https://github.com/Florin12er
