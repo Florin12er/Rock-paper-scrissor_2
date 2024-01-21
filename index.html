@@ -15,20 +15,20 @@
         </div>
         <div class="h-screen bg-blue-300 game" id="game">
             <article>
-                <div class="relative flex justify-center who-won top-12 text-3xl" id="who-won">
-                    <p class="text-3xl">
+                <div class="relative flex justify-center who-won top-12 text-1xl sm:text-7xl" id="who-won">
+                    <p class="text-1xl sm:text-7xl">
                         chose your weapon
                     </p>
                 </div>
             </article>
             <article>
-                <div class="relative flex justify-center game-score top-12 text-2xl" id="game-score">
-                    <p class="text-2xl">Score: 0 - 0</p>
+                <div class="relative flex justify-center game-score top-12 text-1xl sm:text-[2.2rem]" id="game-score">
+                    <p class="text-1xl sm:text-[2.2rem]">Score: 0 - 0</p>
                 </div>
             </article>
             <article id="game-board">
                 <div class="flex justify-center choiches" id="choiches">
-                    <div class="relative cursor-pointer rock top-28" id="rock">
+                    <div class="weapon relative cursor-pointer rock top-28" id="rock">
                         <div class="rockSvg" id="rockSvg">
                             <svg class="w-20 h-20 sm:w-56 sm:h-56" viewBox="0 0 36 36"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -65,7 +65,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="relative cursor-pointer paper top-28 " id="paper">
+                    <div class="weapon relative cursor-pointer paper top-28 " id="paper">
                         <div class="paperSvg  id=" paperSvg">
                             <svg class="w-20 h-20 sm:w-56 sm:h-56" fill="#000000" version="1.1" id="Layer_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -84,7 +84,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="relative cursor-pointer scissors top-28 " id="scissors">
+                    <div class="weapon relative cursor-pointer scissors top-28 " id="scissors">
                         <div class="scissorsSvg " id="paperSvg">
                             <svg class="w-20 h-20 sm:w-56 sm:h-56" version="1.1" id="Layer_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -159,7 +159,7 @@
                 </div>
             </article>
             <div class=" flex justify-center">
-                <button id="play" class="play relative top-36 sm:flex p-2 w-40 sm:w-52 text-2xl bg-blue-800">Play</button><br>
+                <button id="play" class="play relative top-36 p-2 w-40 text-2xl sm:w-52 sm:text-7xl bg-blue-800">Play</button><br>
             </div>
             <div class="flex justify-center">
                     <button id="reset" class="reset relative text-2xl sm:text-7xl top-40 p-2 w-40 sm:w-52 bg-blue-800">Reset</button>

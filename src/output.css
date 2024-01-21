@@ -844,10 +844,6 @@ video {
   width: 10rem;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -2021,6 +2017,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2502,16 +2503,12 @@ video {
     height: 14rem;
   }
 
-  .sm\:w-56 {
-    width: 14rem;
-  }
-
-  .sm\:w-80 {
-    width: 20rem;
-  }
-
   .sm\:w-52 {
     width: 13rem;
+  }
+
+  .sm\:w-56 {
+    width: 14rem;
   }
 
   .sm\:text-7xl {
@@ -2519,8 +2516,59 @@ video {
     line-height: 1;
   }
 
+  .sm\:text-\[5rem\] {
+    font-size: 5rem;
+  }
+
+  .sm\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .sm\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .sm\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
+  .sm\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+
+  .sm\:text-\[4\.5rem\] {
+    font-size: 4.5rem;
+  }
+
+  .sm\:text-\[2\.2rem\] {
+    font-size: 2.2rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-56 {
+    height: 14rem;
+  }
+
+  .lg\:w-52 {
+    width: 13rem;
+  }
+
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[2\.2rem\] {
+    font-size: 2.2rem;
   }
 }
 
