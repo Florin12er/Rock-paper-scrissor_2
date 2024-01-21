@@ -26,9 +26,12 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-function choosePlayer(choice) {
+function choosePlayerHandler(choice) {
   setBorder(elements[choice]);
   player = choice;
+
+  // Add a visual indication of the selected choice
+  elements[choice].classList.add("user-selected");
 }
 
 function computerPlay() {
@@ -41,7 +44,13 @@ function computerPlay() {
   return sortedChoices[randomIndex].choice;
 }
 
-function playRound(player, computer) {
+function playRoundHandler() {
+  if (player) {
+    elements[player].classList.remove("user-selected");
+  }
+
+  const computer = computerPlay();
+
   if (player === computer) {
     elements.whoWon.textContent = "Tie!";
   } else {
@@ -99,25 +108,32 @@ function updateScore() {
   elements.gameScore.textContent = `Score: ${playerScore} - ${computerScore}`;
 }
 
-function resetScore() {
+function resetScoreHandler() {
+  if (player) {
+    elements[player].classList.remove("user-selected");
+  }
+
   playerScore = 0;
   computerScore = 0;
   elements.whoWon.textContent = "Choose your weapon!";
   updateScore();
 }
 
-for (const key in elements) {
-  if (key !== "reset" && key !== "play") {
-    elements[key].addEventListener("click", () => choosePlayer(key));
+function addEventListeners() {
+  for (const key in elements) {
+    if (key !== "reset" && key !== "play") {
+      elements[key].addEventListener("click", () => choosePlayerHandler(key));
+      elements[key].addEventListener("touchstart", () =>
+        choosePlayerHandler(key),
+      );
+    }
   }
+
+  elements.reset.addEventListener("click", resetScoreHandler);
+  elements.reset.addEventListener("touchstart", resetScoreHandler);
+
+  elements.play.addEventListener("click", playRoundHandler);
+  elements.play.addEventListener("touchstart", playRoundHandler);
 }
 
-elements.reset.addEventListener("click", resetScore);
-
-elements.play.addEventListener("click", () => {
-  const computer = computerPlay();
-  playRound(player, computer);
-});
-
-// Initial setup
-resetScore();
+addEventListeners();
