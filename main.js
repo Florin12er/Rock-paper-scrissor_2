@@ -130,10 +130,8 @@ function addEventListeners() {
   }
 
   elements.reset.addEventListener("click", resetScoreHandler);
-  elements.reset.addEventListener("touchstart", resetScoreHandler);
 
   elements.play.addEventListener("click", playRoundHandler);
-  elements.play.addEventListener("touchstart", playRoundHandler);
 }
 
 addEventListeners();
