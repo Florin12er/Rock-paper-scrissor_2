@@ -7,7 +7,7 @@ game rules are as follows:
 - if both players choose the same move, it's a tie
 - the winner is the one with the most wins
 
-## how to play
+## how to play the game
 - select your move
 - wait for the computer to make a move
 - see who won
