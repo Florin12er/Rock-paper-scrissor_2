@@ -1,4 +1,4 @@
-this is a rock paper scissors game made with [vite](https://vitejs.dev/) and [tailwind](https://tailwindcss.com/)
+tis is a rock paper scissors game made with [vite](https://vitejs.dev/) and [tailwind](https://tailwindcss.com/)
 
 game rules are as follows:
 - rock beats scissors
